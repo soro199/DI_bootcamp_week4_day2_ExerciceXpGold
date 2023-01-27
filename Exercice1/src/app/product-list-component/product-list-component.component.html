@@ -1,0 +1,43 @@
+<h1>Produit</h1>
+
+<table>
+<thead>
+  <tr>
+    <th>Nom</th>
+    <th>Prix</th>
+    <th>Catégorie</th>
+
+  </tr>
+
+</thead>
+<tbody>
+
+  <tr>
+
+ <td>
+    <ul *ngFor="let group of produit">
+      <li>{{ group.nom }}</li>
+
+    </ul>
+  </td>
+
+  <td>
+    <ul *ngFor="let group of produit">
+      <li>{{ group.prix }}</li>
+
+    </ul>
+  </td>
+
+  <td>
+    <ul *ngFor="let group of produit">
+      <li>{{ group.categorie }}</li>
+
+    </ul>
+  </td>
+
+  </tr>
+
+
+</tbody>
+
+</table>
